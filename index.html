@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Alexandre Grignon — Architecte & BIM Manager. Projets, enseignement, outils et recherches autour du BIM et de l'architecture.">
+    <title>Alexandre Grignon — Architecte & BIM Manager</title>
+
+    <!-- Minimal, performant CSS embarqué -->
+    <style>
+        :root {
+            /* Solarized Light (accessible contrast) */
+            --bg: #fdf6e3;
+            /* base3 */
+            --fg: #073642;
+            /* base02: strong dark text for contrast */
+            --muted: #586e75;
+            /* base01: muted text */
+            --accent: #268bd2;
+            /* blue accent */
+            --link: #0b556b;
+            /* darker link for improved contrast */
+            --maxw: 60ch;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            padding: 4svh 6vw;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            background: var(--bg);
+            color: var(--fg);
+            -webkit-font-smoothing: antialiased;
+            line-height: 1.45;
+            display: grid;
+            place-items: start center;
+        }
+
+        main {
+            width: min(var(--maxw), 100%);
+        }
+
+        header {
+            margin-top: 2vh;
+            margin-bottom: 1.5vh;
+        }
+
+        section {
+            margin-top: 3rem;
+        }
+
+        h1 {
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            margin-top: 0;
+            margin-bottom: .2rem;
+            letter-spacing: -0.02em
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-top: 1.1rem;
+            margin-bottom: .6rem;
+            color: var(--fg);
+            letter-spacing: 0.06em;
+            font-style: italic;
+        }
+
+        dl {
+            margin-bottom: 1.25rem;
+        }
+
+        dt {
+            font-size: .86rem;
+            font-weight: 400;
+            margin-bottom: .25rem;
+        }
+
+        dd {
+            margin-left: 0;
+            margin-bottom: 2rem;
+            color: var(--muted);
+        }
+
+        .role {
+            display: block;
+            font-weight: 500;
+            color: var(--fg);
+            font-size: 1rem;
+            margin-bottom: .15rem;
+        }
+
+        .date {
+            display: inline-block;
+            background: rgba(88, 110, 117, 0.08);
+            /* light grey background */
+            color: var(--muted);
+            font-size: .8rem;
+            padding: .12rem .5rem;
+            border-radius: 999px;
+            border: 1px solid rgba(88, 110, 117, 0.12);
+            /* subtle grey border */
+        }
+
+        .place {
+            display: block;
+            font-size: 1.1rem;
+            margin-left: 0;
+            margin-top: .18rem;
+            font-weight: 700;
+        }
+
+        ul {
+            font-size: 1rem;
+            padding-left: 1.2rem;
+            margin: 0
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            text-decoration-color: currentColor;
+        }
+
+        a:focus {
+            outline: 2px dashed var(--accent);
+            outline-offset: 3px
+        }
+
+        .meta {
+            font-size: .92rem;
+            color: var(--muted);
+            margin-top: .6rem;
+            margin-bottom: 1.2rem;
+        }
+
+        /* skip link and accessibility helpers */
+        .skip {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden
+        }
+
+        .skip:focus {
+            left: 1rem;
+            top: 1rem;
+            width: auto;
+            height: auto;
+            padding: .5rem .75rem;
+            border-radius: 6px;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+            border: 0
+        }
+
+        .projets {
+            background: transparent;
+            padding: .8rem;
+            border-radius: 8px
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: .85rem;
+            color: var(--muted)
+        }
+
+        /* Simple responsive rule */
+        @media (min-width:780px) {
+            body {
+                padding: 6vh 12vw
+            }
+        }
+
+        /* Print friendly */
+        @media print {
+            body {
+                padding: 0;
+                background: transparent;
+                color: #000
+            }
+
+            a::after {
+                content: " (" attr(href) ")"
+            }
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a class="skip" href="#main-content">Aller au contenu</a>
+    <main id="main-content">
+        <header>
+            <h1>Alexandre Grignon</h1>
+            <p class="meta">
+                <a class="link-inline" href="https://www.linkedin.com/in/alexandregrignon/"
+                    aria-label="Alexandre Grignon sur LinkedIn" rel="me">
+                    LinkedIn
+                </a>
+            </p>
+        </header>
+
+        <section aria-labelledby="experience">
+            <h2 id="experience">Parcours</h2>
+            <dl>
+                <dt><time class="date" datetime="2022">depuis 2022</time> <span class="place">TRACKS</span></dt>
+                <dd>
+                    <span class="role">Architecte chef de projet</span>
+                </dd>
+
+                <dt><time class="date" datetime="2016">2016</time>–<time class="date" datetime="2024">2024</time> <span
+                        class="place">ensa Nantes</span></dt>
+                <dd>
+                    <span class="role">Enseignant vacataire</span>
+                </dd>
+
+                <dt><time class="date" datetime="2011">2011</time>–<time class="date" datetime="2022">2022</time> <span
+                        class="place">forma6</span></dt>
+                <dd>
+                    <span class="role">Architecte chef de projet &amp; BIM Manager</span>
+                </dd>
+
+                <dt><time class="date" datetime="2015">2015</time>–<time class="date" datetime="2021">2021</time> <span
+                        class="place">buildingSMART France</span></dt>
+                <dd>
+                    <span class="role">Co-animateur plateforme BIMstandards</span>
+                </dd>
+            </dl>
+        </section>
+
+        <section aria-labelledby="projets">
+            <h2 id="projets">Projets personnels</h2>
+            <ul class="projets">
+                <li>Un <a href="https://atlas.architheque.fr/">guide de voyage</a> dédié à l’architecture</li>
+                <li>Des <a href="https://paperkit.page/">trames imprimables</a> à partir d’une page web</li>
+            </ul>
+        </section>
+
+        <footer>
+        </footer>
+    </main>
+</body>
+
+</html>
